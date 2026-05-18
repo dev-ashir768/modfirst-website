@@ -2,6 +2,11 @@ import HeroSlider from '@/components/home/hero-slider'
 import Testimonials from '@/components/home/testimonials'
 import PromoBanner from '@/components/home/promo-banner'
 import ProductGrid from '@/components/product/product-grid'
+import OrderingProcess from '@/components/home/ordering-process'
+import PromoVideo from '@/components/home/promo-video'
+import WhyModfirst from '@/components/home/why-modfirst'
+import BlogSection from '@/components/home/blog-section'
+import CtaSection from '@/components/home/cta-section'
 
 const data = [
     {
@@ -45,10 +50,15 @@ const page = () => {
     return (
         <>
             <HeroSlider />
-            <PromoBanner />
-            <Testimonials />
             <ProductGrid heading="DTF SUPPLIES Products" data={data} className="py-8 md:py-14" />
+            <WhyModfirst />
             <ProductGrid heading="Transfers" data={data} className="py-8 md:py-14" />
+            <OrderingProcess />
+            <PromoBanner />
+            <PromoVideo />
+            <Testimonials />
+            <BlogSection />
+            <CtaSection />
         </>
     )
 }
