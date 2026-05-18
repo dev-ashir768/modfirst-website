@@ -10,7 +10,7 @@ import AnnouncementBar from './announcement-bar';
 const Header = () => {
     return (
         <>
-            <header className='w-full fixed z-10'>
+            <header className='w-full fixed z-30'>
                 <AnnouncementBar />
                 <nav className='w-full h-16 shadow-lg bg-background'>
                     <div className='container py-2 w-full h-full flex items-center justify-between'>

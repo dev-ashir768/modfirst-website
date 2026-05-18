@@ -39,7 +39,7 @@ const HeroSlider = () => {
     }, [api]);
 
     return (
-        <section className="container flex flex-1 mt-30 mb-5 min-h-[calc(100vh-9.5rem)]">
+        <section className="container flex flex-1 mt-31 min-h-[calc(100vh-9.5rem)]">
             <Carousel
                 opts={{ loop: true }}
                 setApi={setApi}

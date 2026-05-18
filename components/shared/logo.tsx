@@ -4,12 +4,24 @@ import Image from "next/image";
 
 interface LogoProps {
   className?: string;
+  variant?: "dark" | "white";
+  width?: number;
+  height?: number;
 }
 
-export function Logo({ className }: LogoProps) {
+export function Logo({ className, variant = "dark", width = 200, height = 200 }: LogoProps) {
+  const logoSrc = variant === "white" ? "/images/branding/logo-white.png" : "/images/branding/logo-dark.png";
+  
   return (
-    <Link href="/" className={cn(className, "w-full h-full")}>
-      <Image src={"/images/branding/logo-dark.png"} alt="logo" width={200} height={200} className="w-full h-full object-contain" />
+    <Link href="/" className={cn(className, "block w-full h-full")}>
+      <Image 
+        src={logoSrc} 
+        alt="logo" 
+        width={width} 
+        height={height} 
+        className="w-full h-full object-contain" 
+        priority
+      />
     </Link>
   );
 }
