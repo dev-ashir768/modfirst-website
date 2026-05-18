@@ -17,7 +17,7 @@ const Header = () => {
                         <Button size="icon" variant="ghost">
                             <MenuIcon />
                         </Button>
-                        <Logo variant="white" />
+                        <Logo variant="dark" />
                         <div className='flex items-center'>
                             <Button size="icon" variant="ghost">
                                 <UserRoundIcon />

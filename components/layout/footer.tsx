@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="relative w-full overflow-hidden flex flex-col items-center justify-end h-[30vh] md:h-[50vh] [clip-path:inset(0_0_0_0)]">
+            <div className="relative w-full overflow-hidden flex flex-col items-center justify-end h-[30vh] lg:h-[50vh] [clip-path:inset(0_0_0_0)]">
                 <div
                     className="absolute inset-0 opacity-20 pointer-events-none"
                     style={{
@@ -54,7 +54,7 @@ const Footer = () => {
 
                 <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent z-10" />
 
-                <h2 className="fixed left-1/2 -translate-x-1/2 bottom-9 z-20 font-heading text-[19.5vw] leading-none font-black text-white select-none">
+                <h2 className="fixed left-1/2 -translate-x-1/2 bottom-[16%] md:bottom-[10%] z-20 font-heading text-[19.5vw] leading-none font-black text-white select-none">
                     MODFIRST
                 </h2>
             </div>
